@@ -1,0 +1,7 @@
+cfd9a2a test
+624d605 target added
+42cc63b Create README.md
+420d516 Merge branches 'dev1' and 'dev2'
+3ef37e9 thej1.html added
+04b6acf thej.html added
+7d3841e Maven started
