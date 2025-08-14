@@ -1,4 +1,4 @@
-FROM openjdk:alpine
-RUN mkdir /mydata
-ADD target/myproj-1.0-SNAPSHOT.jar /mydata/myproj-1.0-SNAPSHOT.jar
-CMD java -cp /mydata/myproj-1.0-SNAPSHOT.jar com.thejas.App
+FROM openjdk:11-jre-slim
+WORKDIR /app
+COPY target/BankingMicroservice-1.0-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
