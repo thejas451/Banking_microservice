@@ -1,2 +1,2 @@
 [webserver]
-10.10.25.200 ansible_user=vboxuser ansible_ssh_pass=changeme ansible_become_pass=changeme
+192.168.0.127 ansible_user=vboxuser ansible_ssh_pass=changeme ansible_become_pass=changeme

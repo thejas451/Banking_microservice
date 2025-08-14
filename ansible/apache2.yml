@@ -1,16 +1,12 @@
 ---
-- name: Install Apache2 on Webservers
-  hosts: webservers
+- hosts: webservers
   become: yes
   tasks:
-    - name: Install Apache2
-      apt:
+    - apt:
         name: apache2
         state: present
         update_cache: yes
-
-    - name: Ensure Apache2 is running
-      service:
+    - service:
         name: apache2
         state: started
         enabled: yes
